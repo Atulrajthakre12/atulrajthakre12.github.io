@@ -67,20 +67,31 @@
                 <hr>
             </div>
         </div>
-  
+    </div>
         <!-- ग़ज़ल 2 -->
-<div class="card">
-  <div class="poetry-container">
-    <div class="decorative-icon">✨</div>
-    <h2>बादलों का दौर</h2>
-    <p>अभी बादलों का दौर है<br>इसलिए लहरों का शोर है<br>जब बदल आएगा मौसम<br>पता चलेगा कौन किस ओर है</p>
-    <hr>
-    <p>अभी फ़िज़ा है रंगीन सारी<br>देख इसे नाच रहे मोर है<br>आने दो पतझड़ का तूफ़ान<br>कौन थामेगा पौधों की डोर है</p>
-    <hr>
-    <p>उस पेड़ को गिराने के लिए<br>लगा रहे हवा पानी जोर है<br>सीने से लगा रखा है मिट्टी ने<br>थामे रखी इन जड़ों की डोर है</p>
-    <hr>
-  </div>
+<!-- ग़ज़ल 2 -->
+<div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>बादलों का दौर</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+        <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
+            <p>अभी बादलों का दौर है<br>इसलिए लहरों का शोर है<br>जब बदल आएगा मौसम<br>पता चलेगा कौन किस ओर है</p>
+            <hr>
+            <p>अभी फ़िज़ा है रंगीन सारी<br>देख इसे नाच रहे मोर है<br>आने दो पतझड़ का तूफ़ान<br>कौन थामेगा पौधों की डोर है</p>
+            <hr>
+            <p>उस पेड़ को गिराने के लिए<br>लगा रहे हवा पानी जोर है<br>सीने से लगा रखा है मिट्टी ने<br>थामे रखी इन जड़ों की डोर है</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
+        </div>
+    </div>
 </div>
+
    <!-- ग़ज़ल 3 -->
  <div class="card">
   <div class="poetry-container">
