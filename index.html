@@ -44,20 +44,30 @@
         </p>
     </section>
 <div id="ghazal-section" class="category-content">
-<!-- ग़ज़ल 1 -->
-    <div class="card">
-        <h2>गुमान</h2>
-        <div class="poetry-container">
-            <p>कितना गुमान था आसमान को<br>आंखें ढूंढती है अब मकान को</p>
-            <hr>
-            <p>छोड़ आए है किस शहर में रंगत<br>पूछती है मंज़िल अब थकान को</p>
-            <hr>
-            <p>कैसे बात करी जाए गुज़रे पलों से<br>पूछती है आँखें ये जुबान को</p>
-            <hr>
-            <p>नज़रें गड़ाए बैठा हूँ तन्हाई में यूँ<br>अपने घर के बिखरे हुए सामान को</p>
-            <h3>— लेखक: अतुल राज ठाकरे</h3>
+    <!-- ग़ज़ल 1 -->
+    <div class="card poetry-accordion">
+        <!-- यह टाइटल है जो हमेशा दिखेगा और जिस पर क्लिक होगा -->
+        <div class="poetry-header" onclick="togglePoetry(this)">
+            <h2>गुमान</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        
+        <!-- यह अंदर की ग़ज़ल है जो क्लिक करने पर खुलेगी -->
+        <div class="poetry-body" style="display: none;">
+            <div class="poetry-container">
+                <div class="decorative-icon">✨</div>
+                <p>कितना गुमान था आसमान को<br>आंखें ढूंढती है अब मकान को</p>
+                <hr>
+                <p>छोड़ आए है किस शहर में रंगत<br>पूछती है मंज़िल अब थकान को</p>
+                <hr>
+                <p>कैसे बात करी जाए गुज़रे पलों से<br>पूछती है आँखें ये जुबान को</p>
+                <hr>
+                <p>नज़रें गड़ाए बैठा हूँ तन्हाई में यूँ<br>अपने घर के बिखरे हुए सामान को</p>
+                <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            </div>
         </div>
     </div>
+</div>
 
      <!-- ग़ज़ल 2 -->
 <div class="card">
