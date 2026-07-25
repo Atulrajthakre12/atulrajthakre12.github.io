@@ -3,3 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     alert("स्वागत है! अतुल राज ठाकरे की आधिकारिक वेबसाइट पर।");
 });
+function togglePoetry(header) {
+    const card = header.parentElement;
+    const body = card.querySelector('.poetry-body');
+    
+    if (body.style.display === "none") {
+        body.style.display = "block";
+        card.classList.add("active");
+    } else {
+        body.style.display = "none";
+        card.classList.remove("active");
+    }
+}

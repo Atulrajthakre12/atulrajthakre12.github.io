@@ -64,12 +64,11 @@
                 <hr>
                 <p>नज़रें गड़ाए बैठा हूँ तन्हाई में यूँ<br>अपने घर के बिखरे हुए सामान को</p>
                 <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+                <hr>
             </div>
         </div>
-    </div>
-</div>
-
-     <!-- ग़ज़ल 2 -->
+  
+        <!-- ग़ज़ल 2 -->
 <div class="card">
   <div class="poetry-container">
     <div class="decorative-icon">✨</div>
@@ -949,6 +948,18 @@
       event.currentTarget.classList.add('active');
     }
   }
+  function togglePoetry(header) {
+    const card = header.parentElement;
+    const body = card.querySelector('.poetry-body');
+    
+    if (body.style.display === "none") {
+        body.style.display = "block";
+        card.classList.add("active");
+    } else {
+        body.style.display = "none";
+        card.classList.remove("active");
+    }
+}
 </script>
 
 </body>
