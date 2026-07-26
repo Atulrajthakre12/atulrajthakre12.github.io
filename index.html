@@ -93,30 +93,46 @@
 </div>
 
    <!-- ग़ज़ल 3 -->
- <div class="card">
-  <div class="poetry-container">
-    <div class="decorative-icon">✨</div> 
-     <h2>दिल के चिराग़</h2>
- <p>चिराग अपने दिल के जला कर रखिए<br>मैं आग हूँ मुझे बुझा कर रखिए</p>
- <hr>
- <p>मैं पहाड़ सहराओ के हिस्से में हूँ<br>इन खारे पानी को छिपा कर रखिए</p>
- <hr>
- <p>दरीचा इन झिलमिलाते तारों का है<br>अपने हिस्से के उजाले बचाकर रखिए</p>
- <hr>
- <p>खुशबू फूलों की इन हाथों में रह जाए<br>ऐसा किरदार अपना बनाकर रखिए</p>
- <hr>
-<p>तन बदन को सजाने वालो गौर करिए<br>ज़रा अपने मन को भी सजाकर रखिए</p>
-<hr>
-<p>काबू में है समुद्र मुकाबले इन दरियाओं के<br>चट्टानों और गहराइयों थोड़ा डराकर रखिए</p>
-<hr>
- </div>
+<div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>दिल के चिराग़</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+        <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
+            <p>चिराग अपने दिल के जला कर रखिए<br>मैं आग हूँ मुझे बुझा कर रखिए</p>
+            <hr>
+            <p>मैं पहाड़ सहराओ के हिस्से में हूँ<br>इन खारे पानी को छिपा कर रखिए</p>
+            <hr>
+            <p>दरीचा इन झिलमिलाते तारों का है<br>अपने हिस्से के उजाले बचाकर रखिए</p>
+            <hr>
+            <p>खुशबू फूलों की इन हाथों में रह जाए<br>ऐसा किरदार अपना बनाकर रखिए</p>
+            <hr>
+            <p>तन बदन को सजाने वालो गौर करिए<br>ज़रा अपने मन को भी सजाकर रखिए</p>
+            <hr>
+            <p>काबू में है समुद्र मुकाबले इन दरियाओं के<br>चट्टानों और गहराइयों थोड़ा डराकर रखिए</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<!-- ग़ज़ल 4 -->
+ <div class="card poetry-accordion">
+  <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>मोह तेरा</h2>
+        <span class="toggle-icon">▼</span>
     </div>
 
-    <!-- कविता 4 -->
-    <div class="card">
-         <div class="poetry-container">
-        <div class="decorative-icon">✨</div>
-        <h2 style="color:#f6f6f6; margin-bottom: 15px;">मोह तेरा</h2>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+        <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
             <p>मोह था तेरा जो छूठा नहीं<br>नेत्रों से मेरे वो छुपा नहीं</p>
             <hr>
             <p>भ्रमित हुए जा रहा हूँ मैं<br>कुछ शेष अब बचा नहीं</p>
@@ -126,14 +142,24 @@
             <p>ये नगरा छोड़ गया जा<br>वो शख्स मुझ मिला नहा</p>
             <hr>
             <p>जो डूबा है जाके उस सागर में<br>वो मिला नहीं या बचा नहीं</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
         </div>
     </div>
+ </div>
 
-    <!-- ग़ज़ल 5 -->
-    <div class="card">
-        <div class="decorative-icon">✨</div>
+ <!-- ग़ज़ल 5 -->
+  <div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>दर्द-ए-बयाँ होना</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
         <div class="poetry-container">
-            <h2 style="color:#fffefe; margin-bottom: 15px;">दर्द-ए-बयाँ होना</h2>
+            <div class="decorative-icon">✨</div>
             <p>आसान नहीं होता दिल-ए-दर्द बयाँ होना<br>किसी के दिल में बनाकर घर उसी से हया होना</p>
             <hr>
             <p>महरूम रहता है ज़ेहन जिसकी कशिश से<br>उसके ही तसव्वुर से आँखों का दरिया बह गया होना</p>
@@ -145,19 +171,152 @@
             <p>यक़ीनन अतुल को रुलाता है<br>उसका होना पर बदल गया होना</p>
             <hr>
             <p>कि इस क़दर मोहब्बत हुई<br>और उसका बेवफ़ा हो गया होना</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
         </div>
     </div>
+  </div>
 
-    <!-- gazal 6 -->
-<div class="card">
+  <!-- ग़ज़ल 6 -->
+   <div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>दर्द छुपाता रहा</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+        <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
+            <p>वो याद आती रही मुझे<br>मैं जिसे भुलाता रहा</p>
+            <hr>
+            <p>बंजर था खेत बाग<br>माली पौधा उगाता रहा</p>
+            <hr>
+            <p>थामा रहा जिसका हाथ<br>वही हाथ छुड़ाता रहा</p>
+            <hr>
+            <p>अभी मेरे मन में वो तारा था<br>उसी का खयाल मुझे सताता रहा</p>
+            <hr>
+            <p>खुशिया मेरी मुझे सुला गई<br>तेरा दर्द भर जगाता रहा</p>
+            <hr>
+            <p>जिसे मिलके हमनशी समझा<br>वही जिस्म में खंजर चुभाता रहा</p>
+            <hr>
+            <p>अब उसकी परछाई से भी रुस्वाई है<br>ख़ातिर जिसके खुद को दफनाता रहा</p>
+            <hr>
+            <p>कितनी अजीब थी राह-ए-इश्क़ रहगुज़र<br>कभी हँसाता तो कभी रुलाता रहा</p>
+            <hr>
+            <p>सुहाना सा मौसम था सूरज छुपा हुआ<br>याद है कभी वो गले से लगाता रहा</p>
+            <hr>
+            <p>इनायत तेरी मिली न खुशी जानम<br>मुस्कुराता रहा दर्द छुपाता रहा</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
+        </div>
+    </div>
+   </div>
+
+   <!-- ग़ज़ल 7 -->
+    <div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+       <h2>दिल के चिराग़</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
   <div class="poetry-container">
-    <div class="decorative-icon">✨</div>
-    <h2>दर्द छुपाता रहा</h2>
-        <p>
-            वो याद आती रही मुझे<br>
-            मैं जिसे भुलाता रहा
-        </p>
-        <hr>
+    <div class="decorative-icon">✨</div> 
+     
+ <p>चिराग अपने दिल के जला कर रखिए<br>मैं आग हूँ मुझे बुझा कर रखिए</p>
+ <hr>
+ <p>मैं पहाड़ सहराओ के हिस्से में हूँ<br>इन खारे पानी को छिपा कर रखिए</p>
+ <hr>
+ <p>दरीचा इन झिलमिलाते तारों का है<br>अपने हिस्से के उजाले बचाकर रखिए</p>
+ <hr>
+ <p>खुशबू फूलों की इन हाथों में रह जाए<br>ऐसा किरदार अपना बनाकर रखिए</p>
+ <hr>
+<p>तन बदन को सजाने वालो गौर करिए<br>ज़रा अपने मन को भी सजाकर रखिए</p>
+<hr>
+<p>काबू में है समुद्र मुकाबले इन दरियाओं के<br>चट्टानों और गहराइयों थोड़ा डराकर रखिए</p>
+<h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+<hr>
+ </div>
+    </div>
+    </div>
+
+
+
+    <!-- ग़ज़ल 8 -->
+<div class="card poetry-accordion">
+  <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+   <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>मोह तेरा</h2>
+        <span class="toggle-icon">▼</span>
+   </div>
+          <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+        <div class="poetry-body" style="display: none;">`
+            <div class="poetry-container">
+                <div class="decorative-icon">✨</div>
+            <p>मोह था तेरा जो छूठा नहीं<br>नेत्रों से मेरे वो छुपा नहीं</p>
+            <hr>
+            <p>भ्रमित हुए जा रहा हूँ मैं<br>कुछ शेष अब बचा नहीं</p>
+            <hr>
+            <p>हर क्षण ख़याल तेरा<br>कई पहर से मैं हँसा नहीं</p>
+            <hr>
+            <p>ये नगरा छोड़ गया जा<br>वो शख्स मुझ मिला नहा</p>
+            <hr>
+            <p>जो डूबा है जाके उस सागर में<br>वो मिला नहीं या बचा नहीं</p>
+            <hr>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+    <!-- ग़ज़ल 9 -->
+    <div class="card poetry-accordion">
+        <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+        <div class="poetry-header" onclick="togglePoetry(this)">
+            <h2>दर्द-ए-बयाँ होना</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+        <div class="poetry-body" style="display: none;">
+          <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
+
+            <p>आसान नहीं होता दिल-ए-दर्द बयाँ होना<br>किसी के दिल में बनाकर घर उसी से हया होना</p>
+            <hr>
+            <p>महरूम रहता है ज़ेहन जिसकी कशिश से<br>उसके ही तसव्वुर से आँखों का दरिया बह गया होना</p>
+            <hr>
+            <p>अपनी आशाओं का नया दीप जलाना<br>फिर अरमानों का बिखर गया होना</p>
+            <hr>
+            <p>यतीम हो चुका वियोग से उसके, परेशान हूँ<br>तोहमत से उसके उसका ही खो गया होना</p>
+            <hr>
+            <p>यक़ीनन अतुल को रुलाता है<br>उसका होना पर बदल गया होना</p>
+            <hr>
+            <p>कि इस क़दर मोहब्बत हुई<br>और उसका बेवफ़ा हो गया होना</p>
+            <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+    <!-- gazal 10 -->
+    <div class="card poetry-accordion">
+        <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+        <div class="poetry-header" onclick="togglePoetry(this)">
+            <h2>दर्द छुपाता रहा</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+        <div class="poetry-body" style="display: none;">
+          <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
+            <p>
+                वो याद आती रही मुझे<br>
+                मैं जिसे भुलाता रहा
+            </p>
+            <hr>
         <p>
             बंजर था खेत बाग<br>
             माली पौधा उगाता रहा
@@ -203,16 +362,23 @@
             मुस्कुराता रहा दर्द छुपाता रहा
         </p>
         <hr>
-
+        <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+        <hr>
+          </div>
     </div>
      </div>
     
-         <!--ग़ज़ल 7-->
-    <div class="card">
-        <div class="poetry-container">
-        <div class="decorative-icon">✨</div>
-      <h2 style="color: #ffffff; margin-bottom: 20px;">उन तारों ने टिमटिमाना छोड़ दिया</h2>
-        
+         <!--ग़ज़ल 11-->
+    <div class="card poetry-accordion">
+        <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+        <div class="poetry-header" onclick="togglePoetry(this)">
+            <h2> उन तारों ने टिमटिमाना छोड़ दिया</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+        <div class="poetry-body" style="display: none;">
+          <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
         <p>
             उन तारों ने टिमटिमाना छोड़ दिया है<br>
             मुसाफ़िर ने अपना आशियाना छोड़ दिया है
@@ -238,14 +404,23 @@
             मैंने वो गली में जाना छोड़ दिया है
         </p>
         <hr>
+        <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+        <hr>
+        </div>
     </div>
      </div>
 
-<!-- ग़ज़ल / कविता -->
-<div class="card">
-  <div class="poetry-container">
-    <div class="decorative-icon">✨</div>
-    <h2>अजब शमा रहा</h2>
+<!-- ग़ज़ल 12 -->
+<data class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+     <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>अजब शमा</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+      <div class="poetry-container">
+        <div class="decorative-icon">✨</div>
 
     <p>अजब शमा रहा तेरे जाने का<br>मातम छा गया तेरे न आने का</p>
     <hr>
@@ -285,14 +460,23 @@
 
     <p>इस आरजूओं के गुमान में हु मैं<br>मेरे सर को अपने हाथों से सहराने का</p>
     <hr>
+      </h3>style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+      <hr>
   </div>
     </div>
+  </div>
 
-    <!-- ग़ज़ल - तेरे वास्ते -->
-<div class="card">
-  <div class="poetry-container">
-    <div class="decorative-icon">✨</div>
-    <h2>तेरे वास्ते</h2>
+    <!-- ग़ज़ल 13 -->
+<div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>गुजारनी थी जो जिंदगी गुज़ार दी</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+      <div class="poetry-container">
+        <div class="decorative-icon">✨</div>
 
     <p>गुजारनी थी जो जिंदगी गुज़ार दी<br>बैठ गया गला उसे इतनी पुकार दी</p>
     <hr>
@@ -305,14 +489,23 @@
 
     <p>तोड़ कर खुद का आशियाना राज ने<br>उस बे जान पंछी की जिंदगी सवार दी</p>
     <hr>
+    </h3>style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+    <hr>
+      </div>
   </div>
 </div>
 
-    <!-- ग़ज़ल - जवानी मेरी -->
-<div class="card">
-  <div class="poetry-container">
-    <div class="decorative-icon">✨</div>
-    <h2>जवानी मेरी</h2>
+    <!-- ग़ज़ल 14 -->
+<data class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+     <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>जवानी मेरी</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+      <div class="poetry-container">
+        <div class="decorative-icon">✨</div>
 
     <p>कहा गई वो जवानी मेरी,<br>रौशन वो ज़िंदगानी मेरी।</p>
     <hr>
@@ -330,13 +523,23 @@
     <hr>
     <p>ए काश, दिल के हालात से होते,<br>मरे हुए जिस्म में मनमानी मेरी।</p>
     <hr>
+    <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
   </div>
   </div>
+</div>
 
-<div class="card">
-    <div class="poetry-container">
+
+<!-- ग़ज़ल 15 -->
+<div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>मेरे भीतर वो खुमार है</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+      <div class="poetry-container">
         <div class="decorative-icon">✨</div>
-        <h2 style="color: #ffffff; margin-bottom: 20px;">बेबसी और प्यार</h2>
         
         <p>
             मेरे भीतर वो खुमार है,<br>
@@ -357,13 +560,24 @@
             कंपकपाता हुआ बदन धूआधाड है,<br>
             कैसे जताऊं किस क़दर तुमसे प्यार है।
         </p>
+        <hr>
+        <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+        <hr>
+        </div>
     </div>
 </div>
 
-<div class="card">
-    <div class="poetry-container">
-        <div class="decorative-icon">✨</div>
-        <h2 style="color: #ffffff; margin-bottom: 20px;">तुम जा रही हो</h2>
+<!-- ग़ज़ल 16 -->
+<div class="card poetry-accordion">
+    <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>तुम जा रही हो</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+        <div class="poetry-container">
+            <div class="decorative-icon">✨</div>
         
         <p>
             तुम जा रही हो मुझे छोड़ कर अब,<br>
@@ -399,13 +613,25 @@
             ना मिली तेरी इकरार ए महोब्बत,<br>
             मयकशी राह देखूँगा झूलकर अब।
         </p>
+        <hr>
+        <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+        <hr>
+        </div>
     </div>
 </div>
 
-<div class="card">
-    <div class="poetry-container">
+<!-- ग़ज़ल 17 -->
+<div class="card poetry-accordion"> 
+  <!-- यह हेडर है जिस पर क्लिक करने से ग़ज़ल खुलेगी -->
+    <div class="poetry-header" onclick="togglePoetry(this)">
+        <h2>राख-ए-बदन</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <!-- यह बॉडी है जो शुरू में बंद रहेगी -->
+    <div class="poetry-body" style="display: none;">
+      <div class="poetry-container">
         <div class="decorative-icon">✨</div>
-        <h2 style="color: #ffffff; margin-bottom: 20px;">राख-ए-बदन</h2>
+
         <p>
       राख-ए-बदन हो चुका है,<br>
       उजड़ा चमन हो चुका है।
@@ -425,6 +651,10 @@
       वो गली का महताब, वो गुलाब,<br>
       पहचाना सा साक्श अंजान हो चुका है।
     </p>
+    <hr>
+    <h3 style="margin-top: 15px; color: #ff6b6b; font-size: 1.1rem;">– लेखक: अतुल राज ठाकरे</h3>
+    <hr>
+      </div>
   </div>
 </div>
 
