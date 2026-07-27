@@ -15,3 +15,16 @@ function togglePoetry(header) {
         card.classList.remove("active");
     }
 }
+function showCategory(category) {
+    // सभी सेक्शन को छिपाएँ
+    const sections = document.querySelectorAll('.category-content');
+    sections.forEach(sec => {
+        sec.style.display = 'none';
+    });
+
+    // केवल चुनी गई कैटेगरी को दिखाएँ
+    const targetSection = document.getElementById(category + '-section');
+    if (targetSection) {
+        targetSection.style.display = 'block';
+    }
+}
