@@ -193,3 +193,7 @@ html {
     border-radius: 50%; /* इससे फोटो गोल हो जाएगी */
     border: 3px solid #f59e0b; /* फोटो के चारों ओर सुनहरा बॉर्डर */
 }
+/* ग़ज़ल और शायरी वाले कार्ड्स को छिपाने के लिए */
+.card, .category-content {
+    display: none !important;
+}
