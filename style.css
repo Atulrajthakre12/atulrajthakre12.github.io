@@ -182,3 +182,14 @@ html {
  .category-content{
   display: none;
  }
+ .profile-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.profile-img {
+    width: 140px;       /* इससे फोटो छोटी हो जाएगी */
+    height: 140px;      /* ऊँचाई */
+    object-fit: cover;  /* फोटो का अनुपात सही रहेगा */
+    border-radius: 50%; /* इससे फोटो गोल हो जाएगी */
+    border: 3px solid #f59e0b; /* फोटो के चारों ओर सुनहरा बॉर्डर */
+}
