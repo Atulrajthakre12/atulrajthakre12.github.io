@@ -197,3 +197,13 @@ html {
 .category-content {
     display: none;
 }
+#sher-slider {
+    font-size: 1.5rem; /* फॉन्ट का साइज़ बड़ा करने के लिए */
+    font-weight: 500;
+    color: #ffd700; /* सुनहरा (Golden) रंग ताकि और सुंदर दिखे */
+    text-align: center;
+    margin-top: 35px; /* बटन्स से नीचे खाली स्पेस में लाने के लिए */
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.5s ease-in-out;
+}
