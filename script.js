@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Official website loaded successfully!");
-    
-    // पेज खुलते ही केवल ग़ज़ल सेक्शन दिखेगा, बाकी सब छिप जाएंगे
-    showCategory('ghazal');
 });
-
 function togglePoetry(header) {
     const card = header.parentElement;
     const body = card.querySelector('.poetry-body');
