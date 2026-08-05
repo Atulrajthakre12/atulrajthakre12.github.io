@@ -36,3 +36,23 @@ function showCategory(category) {
     // जो बटन दबाया गया है उसे एक्टिव क्लास दें
     event && event.currentTarget && event.currentTarget.classList.add('active');
 }
+const sheroList = [
+    "शायर • ग़ज़लकार • शेर • कवि",
+    "कितना गुमान था आसमान को, आँखें ढूंढती है अब मकान को",
+    "छोड़ आए है किस शहर में रंगत, पूछती है मंज़िल अब थकान को",
+    "दिल के चिराग़ बुझ गए तो क्या हुआ, उम्मीद की लौ जलती रहनी चाहिए"
+];
+
+let currentIndex = 0;
+const sherElement = document.getElementById("sher-slider");
+
+if (sherElement) {
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % sheroList.length;
+        sherElement.style.opacity = 0;
+        setTimeout(() => {
+            sherElement.innerText = sheroList[currentIndex];
+            sherElement.style.opacity = 1;
+        }, 300);
+    }, 3000);
+}
