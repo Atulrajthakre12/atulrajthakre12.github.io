@@ -27,17 +27,17 @@
         <img src="atul.png.jpeg" alt="Atul Raj Thakre" class="profile-img">
     </div>
 
-    <h1>अतुल राज ठाकरे</h1>
-    <p id="sher-slider">शायरी • ग़ज़लकार • शेर • कवि</p>
-</header>
-
-<!-- मेनू बार यहाँ आएगा -->
+ <!-- मेनू बार (बटन्स) -->
 <nav class="navbar">
-  <button class="nav-btn active" onclick="showCategory('ghazal')">📖 ग़ज़ल</button>
-  <button class="nav-btn" onclick="showCategory('shayari')">✍️ शायरी</button>
-  <button class="nav-btn" onclick="showCategory('sher')">🎤 शेर</button>
-  <button class="nav-btn"onclick="showCategory"('परिचय')>परिचय</button>
+    <button class="nav-btn active" onclick="showCategory('ghazal')">📖 ग़ज़ल</button>
+    <button class="nav-btn" onclick="showCategory('shayari')">✍️ शायरी</button>
+    <button class="nav-btn" onclick="showCategory('sher')">🎤 शेर</button>
+    <button class="nav-btn" onclick="showCategory('parichay')">परिचय</button>
 </nav>
+
+<!-- यहाँ स्लाइडर बटन्स के ठीक नीचे और खाली स्पेस में आएगा -->
+<p id="sher-slider">शायर • ग़ज़लकार • शेर • कवि</p>
+
 
     <section id="parichay-section" class="category-content" style="display: none;">
     <h2>मेरे बारे में</h2>
@@ -1990,9 +1990,10 @@
     // --- यहाँ से आगे शेरों को ऑटोमैटिक स्लाइड करने का कोड है ---
     const sheroList = [
         "शायर • ग़ज़लकार • शेर • कवि",
-        "कितना गुमान था आसमान को, आँखें ढूंढती है अब मकान को",
-        "छोड़ आए है किस शहर में रंगत, पूछती है मंज़िल अब थकान को",
-        "दिल के चिराग़ बुझ गए तो क्या हुआ, उम्मीद की लौ जलती रहनी चाहिए"
+        "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का गम पाल रखा है,",
+        "गुजारनी थी जो उम्र गुज़ार दी बैठ गया गला उसे इतनी आवाज़ दी,",
+        "खोई उमीद भर नहीं आती होती है रात नींद मगर नहीं आती"
+        "मुसलसल चलता रहे ये सफ़र मेरा काशिद बन जाऊं मैं गली का तेरा,",
     ];
 
     let currentIndex = 0;
