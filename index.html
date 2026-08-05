@@ -28,7 +28,7 @@
     </div>
 
     <h1>अतुल राज ठाकरे</h1>
-    <p>शायर • ग़ज़लकार • शेर • कवि</p>
+    <p id="sher-slider">शायरी • ग़ज़लकार • शेर • कवि</p>
 </header>
 
 <!-- मेनू बार यहाँ आएगा -->
@@ -49,6 +49,8 @@
     </p>
 </section>
 <div id="ghazal-section" class="category-content" style="display: none;">
+
+
     <!-- ग़ज़ल 1 -->
     <div class="card poetry-accordion">
         <!-- यह टाइटल है जो हमेशा दिखेगा और जिस पर क्लिक होगा -->
@@ -1958,6 +1960,54 @@
         card.classList.remove("active");
     }
 }
+</script>
+<script>
+    function showCategory(categoryName) {
+        // 1. सभी सेक्शंस छिपाएँ
+        const contents = document.querySelectorAll('.category-content');
+        contents.forEach(content => {
+            content.style.display = 'none';
+        });
+
+        // 2. सभी बटन्स से active क्लास हटाएँ
+        const buttons = document.querySelectorAll('.nav-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // 3. चुना हुआ सेक्शन दिखाएँ
+        const selectedSection = document.getElementById(categoryName + '-section');
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+
+        // क्लिक हुए बटन को एक्टिव बनाएँ
+        if (event && event.currentTarget) {
+            event.currentTarget.classList.add('active');
+        }
+    }
+
+    // --- यहाँ से आगे शेरों को ऑटोमैटिक स्लाइड करने का कोड है ---
+    const sheroList = [
+        "शायर • ग़ज़लकार • शेर • कवि",
+        "कितना गुमान था आसमान को, आँखें ढूंढती है अब मकान को",
+        "छोड़ आए है किस शहर में रंगत, पूछती है मंज़िल अब थकान को",
+        "दिल के चिराग़ बुझ गए तो क्या हुआ, उम्मीद की लौ जलती रहनी चाहिए"
+    ];
+
+    let currentIndex = 0;
+    const sherElement = document.getElementById("sher-slider");
+
+    if (sherElement) {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % sheroList.length;
+            sherElement.style.opacity = 0;
+            setTimeout(() => {
+                sherElement.innerText = sheroList[currentIndex];
+                sherElement.style.opacity = 1;
+            }, 300);
+        }, 3000);
+    }
 </script>
 
 </body>
