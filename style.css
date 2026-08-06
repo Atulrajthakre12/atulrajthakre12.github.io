@@ -314,3 +314,7 @@ html {
   font-weight: 900;
   font-style: italic;
 }
+/* पूरी वेबसाइट के लिए Poppins सेट करें */
+body {
+    font-family: 'Poppins', sans-serif;
+}
