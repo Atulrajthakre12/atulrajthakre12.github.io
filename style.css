@@ -187,8 +187,8 @@ html {
     margin-bottom: 15px;
 }
 .profile-img {
-    width: 200px;       /* इससे फोटो छोटी हो जाएगी */
-    height: 200px;      /* ऊँचाई */
+    width: 400px;       /* इससे फोटो छोटी हो जाएगी */
+    height: 450px;      /* ऊँचाई */
     object-fit: cover;  /* फोटो का अनुपात सही रहेगा */
     border-radius: 50%; /* इससे फोटो gol हो जाएगी */
     border: 3px solid #f59e0b; /* फोटो के चारों ओर सुनहरा बॉर्डर */
