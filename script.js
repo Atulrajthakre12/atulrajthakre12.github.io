@@ -13,27 +13,28 @@ function togglePoetry(header) {
         card.classList.remove("active");
     }
 }
-function showCategory(category) {
-    // 1. सभी सेक्शन्स को छिपाएं
-    const sections = document.querySelectorAll('.category-content');
-    sections.forEach(sec => {
-        sec.style.display = 'none';
+function showCategory(categoryName) {
+    // 1. सभी सेक्शन्स छुपाएँ
+    const contents = document.querySelectorAll('.category-content');
+    contents.forEach(content => {
+        content.style.display = 'none';
     });
 
-    // 2. सही सेक्शन को दिखाएं
-    const targetSection = document.getElementById(category + '-section') || document.getElementById(category);
-    if (targetSection) {
-        targetSection.style.display = 'block';
-    }
-
-    // 3. एक्टिव बटन का रंग बदलें
+    // 2. सभी बटन्स से 'active' क्लास हटाएँ
     const buttons = document.querySelectorAll('.nav-btn');
     buttons.forEach(btn => {
         btn.classList.remove('active');
     });
 
-    if (event && event.currentTarget) {
-        event.currentTarget.classList.add('active');
+    // 3. चुना हुआ सेक्शन दिखाएँ
+    const selectedSection = document.getElementById(categoryName + '-section') || document.getElementById(categoryName);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+
+    // 4. क्लिक हुए बटन को एक्टिव बनाएँ
+    if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.add('active');
     }
 }
 const sheroList = [
