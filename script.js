@@ -38,23 +38,31 @@ function showCategory(categoryName) {
     }
 }
 const sheroList = [
-    "शायर • ग़ज़लकार • शेर • कवि",
-    "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का गम पाल रखा है,",
-        "गुजारनी थी जो उम्र गुज़ार दी बैठ गया गला उसे इतनी आवाज़ दी,",
-        "खोई उमीद भर नहीं आती होती है रात नींद मगर नहीं आती,",
-        "मुसलसल चलता रहे ये सफ़र मेरा काशिद बन जाऊं मैं गली का तेरा,",
+    "शायर • ग़ज़लकार • शेर • कवि",
+    "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का ग़म पाल रखा है,",
+    "गुजारनी थी जो उम्र गुज़ार दी बैठा गया गला उसे इतनी आवाज़ दी,",
+    "खोई उम्मीद भर नहीं आती होती है रात नींद मगर नहीं आती,",
+    "मुसलसल चलता रहे ये सफर मेरा काशिद बन जाऊं मैं गली का तेरा,"
 ];
 
 let currentIndex = 0;
-const sherElement = document.getElementById("sher-slider");
 
-if (sherElement) {
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % sheroList.length;
-        sherElement.style.opacity = 0;
-        setTimeout(() => {
-            sherElement.innerText = sheroList[currentIndex];
-            sherElement.style.opacity = 1;
-        }, 300);
-    }, 3000);
-}
+// Function jo DOM load hone par chalega
+window.addEventListener("DOMContentLoaded", () => {
+    const sherElement = document.getElementById("sher-slider");
+
+    if (sherElement) {
+        // 1. Page khulte hi pehla sher turant dikhayein
+        sherElement.innerText = sheroList[currentIndex];
+
+        // 2. Continuous slideshow (Har 3 sec mein badlega)
+        setInterval(() => {
+            sherElement.style.opacity = 0;
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % sheroList.length;
+                sherElement.innerText = sheroList[currentIndex];
+                sherElement.style.opacity = 1;
+            }, 300);
+        }, 3000);
+    }
+});
