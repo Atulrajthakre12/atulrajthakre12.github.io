@@ -2503,35 +2503,8 @@
         <p>© 2026 अतुल राज ठाकरे | सभी अधिकार सुरक्षित</p>
     </footer>
 
-<!-- जावास्क्रिप्ट यहाँ आएगा -->
- <script src="script.js"></script>
 
-<script>
-    // शेर ऑटोमैटिक स्लाइड करने का कोड
-    const sheroList = [
-        "शायर • ग़ज़लकार • शेर • कवि",
-        "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का गम पाल रखा है,",
-        "गुजारनी थी जो उम्र गुज़ार दी बैठ गया गला उसे इतनी आवाज़ दी,",
-        "खोई उम्मीद भर नहीं आती होती है रात नींद मगर नहीं आती,",
-        "मुसलसल चलता रहे ये सफ़र मेरा काशिद बन जाऊं में गली का तेरा,",
-        "हौसला ही तो था जो टूटा है, हमें गैरों ने नहीं, अपनों ने लूटा है,"
-    ];
-
-    let currentIndex = 0;
-    const sherElement = document.getElementById("sher-slider");
-    
-    if (sherElement) {
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % sheroList.length;
-            sherElement.style.opacity = 0;
-            setTimeout(() => {
-                sherElement.innerText = sheroList[currentIndex];
-                sherElement.style.opacity = 1;
-            }, 300);
-        }, 3000);
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
 
