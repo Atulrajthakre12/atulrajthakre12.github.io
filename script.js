@@ -39,7 +39,7 @@ function showCategory(categoryName) {
 }
 const sheroList = [
     "शायर • ग़ज़लकार • शेर • कवि",
-    "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का ग़म पाल रखा है,",
+    "हंसते हुए चेहरे ने ये भ्रम पाल रखा है तेरे ना होने का गम पाल रखा है,",
     "गुजारनी थी जो उम्र गुज़ार दी बैठा गया गला उसे इतनी आवाज़ दी,",
     "खोई उम्मीद भर नहीं आती होती है रात नींद मगर नहीं आती,",
     "मुसलसल चलता रहे ये सफर मेरा काशिद बन जाऊं मैं गली का तेरा,"
@@ -47,22 +47,18 @@ const sheroList = [
 
 let currentIndex = 0;
 
-// Function jo DOM load hone par chalega
+// Function jo DOM Load hone par chalega
 window.addEventListener("DOMContentLoaded", () => {
     const sherElement = document.getElementById("sher-slider");
 
     if (sherElement) {
-        // 1. Page khulte hi pehla sher turant dikhayein
+        // Page khulte hi pehla sher dikhayein
         sherElement.innerText = sheroList[currentIndex];
 
-        // 2. Continuous slideshow (Har 3 sec mein badlega)
+        // Har 3 second (3000ms) me sher change karein
         setInterval(() => {
-            sherElement.style.opacity = 0;
-            setTimeout(() => {
-                currentIndex = (currentIndex + 1) % sheroList.length;
-                sherElement.innerText = sheroList[currentIndex];
-                sherElement.style.opacity = 1;
-            }, 300);
+            currentIndex = (currentIndex + 1) % sheroList.length;
+            sherElement.innerText = sheroList[currentIndex];
         }, 3000);
     }
 });
