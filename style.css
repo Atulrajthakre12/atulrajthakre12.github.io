@@ -15,6 +15,7 @@ body {
 header, h1, h3 {
     text-align: center;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* शायरी के फ़्रेम (Card) की स्टाइलिंग */git 
@@ -179,17 +180,16 @@ html {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
- .category-content{
-  display: none;
- }
+ 
  .profile-container {
     text-align: center;
     margin-bottom: 15px;
 }
 .profile-img {
-    width: 400px;       /* इससे फोटो छोटी हो जाएगी */
-    height: 450px;      /* ऊँचाई */
-    object-fit: cover;  /* फोटो का अनुपात सही रहेगा */
+  width: 100%;
+  max-width: 400px;       /* इससे फोटो छोटी हो जाएगी */
+  height:auto;      /* ऊँचई */
+  object-fit: cover;  /* फोटो का अनुपात सही रहेगा */
     border-radius: 50%; /* इससे फोटो gol हो जाएगी */
     border: 3px solid #f59e0b; /* फोटो के चारों ओर सुनहरा बॉर्डर */
 }
