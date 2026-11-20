@@ -49,11 +49,11 @@ function showCategory(categoryName) {
   // C. Chuna hua section dikhayein aur button ko active karein
   const sectionId = categoryName.endsWith("-section")
     ? categoryName
-    : ${categoryName}-section;
+    : '${categoryName}-section';
   const selectedSection = document.getElementById(sectionId);
 
   // Find the corresponding button. Assume id structure like 'btn-categoryName'
-  const selectedButton = document.getElementById(btn-${categoryName});
+const selectedButton = document.getElementById(btn-${categoryName});
 
   if (selectedSection) {
     selectedSection.style.display = "block";
